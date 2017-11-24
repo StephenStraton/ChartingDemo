@@ -1,0 +1,19 @@
+{
+    "port": 3000,
+    "db": {
+      "user": "steve",
+      "password": "password",
+      "server": "STEVE-PC\\SQLEXPRESS",
+      "database": "ChartingDemo",
+      "options" : {
+          "instanceName": "MSSQLSERVER"
+      }
+    },
+    "routes" : [
+        {
+            "method":"get",
+            "endpoint": "/results",
+            "query": "SELECT * FROM Results;"
+        }
+    ]
+}
